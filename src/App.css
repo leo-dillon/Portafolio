@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@keyframes name {
+    0%{
+        left: 6px
+    }
+    100%{
+        top: 100%
+    }
+}
+
+*{
+    scroll-behavior: smooth;
+}
