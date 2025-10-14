@@ -1,11 +1,16 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import { Header } from './components/header/Header'
-import { AboutMe } from './components/sections/AboutMe'
 import { Footer } from './components/sections/Footer'
-import { Presentation } from './components/sections/Presentation'
-import { Projects } from './components/sections/Proyects'
+import { Home } from './pages/Home'
+import { Error_404 } from './pages/Error_404'
 
 function App() {
+  const router = createBrowserRouter([
+    { path:"/", element: <Home /> },
+    { path:"*", element: <Error_404 />},
+    { path:"/:nombre", }
+  ])
   return (
     <div className='
       flex flex-col justify-center items-center
@@ -13,9 +18,7 @@ function App() {
       md:max-w-[1000px] 
     '>
       <Header />
-      <Presentation />
-      <AboutMe />
-      <Projects />
+      <RouterProvider router={router}/>
       <Footer />
     </div>
   )

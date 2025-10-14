@@ -46,15 +46,15 @@ export const ListTechnology = () => {
                     <div id="description" className={`
                         w-full max-w-9/10 mx-auto bg-stone-200 text-stone-800 p-4 rounded-2xl shadow-sm shadow-stone-800 
                         dark:bg-stone-800 dark:text-stone-200 dark:shadow-stone-500
-                        sm:absolute sm:top-full overflow-hidden
-                        fixed top-12
+                        sm:absolute sm:-bottom-32 overflow-hidden
+                        fixed bottom-20
                         ${ description ? " translate-x-0" : " translate-x-6" } transition-all duration-500
                     `}>
-                        <div className="flex gap-5 mb-4">
+                        <div className="w-fit flex gap-5 border-b-1 border-b-teal-300 pr-6 pb-2 mb-2">
                             <img src={description.img} alt={`Imagen de ${description.name}`} className="w-6 " />
-                            <h3 className="font-bold">{description.name}</h3>
+                            <h3 className="font-bold text-lg">{description.name}</h3>
                         </div>
-                        <p className="text-stone-800 opacity-80">{description.description}</p>
+                        <p className="">{description.description}</p>
                     </div>
                 : ""
             }
