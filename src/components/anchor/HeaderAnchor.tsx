@@ -5,9 +5,10 @@ interface Props {
     text: string,
     fixed: boolean,
     img: string,
+    target?: boolean 
     darkImg: string
 }
-export const HeaderAnchor = ({ link, text, fixed, img, darkImg }: Props) => {
+export const HeaderAnchor = ({ link, text, fixed, img, darkImg, target = false }: Props) => {
     const { isDark } = useDarkMode();
     return (
         
@@ -21,6 +22,7 @@ export const HeaderAnchor = ({ link, text, fixed, img, darkImg }: Props) => {
                 ${ ( fixed ) ? "p-3" : "p-2"}
             `}
             title={text}
+            target={ target ? "_blank" : "_self" }
         >
             { 
                 ( fixed )

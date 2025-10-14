@@ -11,7 +11,7 @@ export const Presentation = () => {
             text-center text-stone-700
             dark:text-stone-200
         ">
-            <h1 className="text-5xl md:text-6xl lg:text-9xl font-bold py-5 animate-fade-in-up
+            <h1 className="text-5xl md:text-6xl lg:text-9xl font-bold py-5 animate-pulse delay-300
                 via-stone-950 bg-clip-text text-transparent bg-gradient-to-br
                 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-br
                 dark:from-primary-950 dark:via-white dark:to-primary-950
@@ -28,12 +28,13 @@ export const Presentation = () => {
                 Desarrollador de aplicaciones accesibles, atractivas y modernas
             </p>
             <div 
-            className="mt-8 p-4 py-2 flex flex-row gap-4 bg-stone-200 dark:bg-stone-800
+            className="mt-8 p-4 py-2 flex flex-row gap-4 bg-stone-200 shadow-sm shadow-stone-800
+                dark:bg-stone-800 dark:shadow-stone-500
                 rounded-full
             ">
-                <HeaderAnchor link="https://mail.google.com/mail/?view=cm&fs=1&to=jeannotegui@gmail.com&su=Hola%20Leonardo!" text="Contacto" fixed={false} img={mail} darkImg={darkMail} />
-                <HeaderAnchor link="https://github.com/leo-dillon" text="GitHub" fixed={false} img={githubLight} darkImg={githubDark} />
-                <HeaderAnchor link="https://www.linkedin.com/in/leonardo-dillon-jeannoteguy-1878b515a/" text="LinkedIn" fixed={false} img="/redS/brand-linkedin.svg" darkImg="/redS/brand-dark-linkedin.svg" />
+                <HeaderAnchor link="https://mail.google.com/mail/?view=cm&fs=1&to=jeannotegui@gmail.com&su=Hola%20Leonardo!" text="Gmail" fixed={false} img={mail} darkImg={darkMail} target={true} />
+                <HeaderAnchor link="https://github.com/leo-dillon" text="GitHub" fixed={false} img={githubLight} darkImg={githubDark} target={true} />
+                <HeaderAnchor link="https://www.linkedin.com/in/leonardo-dillon-jeannoteguy-1878b515a/" text="LinkedIn" fixed={false} img="/redS/brand-linkedin.svg" darkImg="/redS/brand-dark-linkedin.svg" target={true} />
             </div>
         </section>
     )
