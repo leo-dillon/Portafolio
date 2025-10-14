@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Bootstrap",
+    "img": "/tech/boostrap.svg",
+    "description": "Framework CSS que facilita el diseño responsivo y la creación rápida de interfaces modernas mediante componentes predefinidos."
+  },
+  {
+    "name": "CSS",
+    "img": "/tech/css.svg",
+    "description": "Lenguaje de estilos utilizado para definir la presentación visual de páginas web, controlando colores, tipografías y disposición."
+  },
+  {
+    "name": "Git",
+    "img": "/tech/git.svg",
+    "description": "Sistema de control de versiones distribuido que permite rastrear cambios en el código y colaborar de forma eficiente entre desarrolladores."
+  },
+  {
+    "name": "HTML",
+    "img": "/tech/html.svg",
+    "description": "Lenguaje de marcado estándar para estructurar el contenido en la web, definiendo elementos como textos, enlaces e imágenes."
+  },
+  {
+    "name": "JavaScript",
+    "img": "/tech/javaScript.svg",
+    "description": "Lenguaje de programación esencial para el desarrollo web, que permite crear interactividad, animaciones y lógica del lado del cliente."
+  },
+  {
+    "name": "Kotlin",
+    "img": "/tech/kotlin.svg",
+    "description": "Lenguaje moderno y conciso usado principalmente para desarrollar aplicaciones Android, con total interoperabilidad con Java."
+  },
+  {
+    "name": "Laravel",
+    "img": "/tech/laravel.svg",
+    "description": "Framework de PHP elegante y potente que simplifica el desarrollo de aplicaciones web con una arquitectura MVC clara y herramientas integradas."
+  },
+  {
+    "name": "MongoDB",
+    "img": "/tech/mongoDB.svg",
+    "description": "Base de datos NoSQL orientada a documentos, ideal para manejar grandes volúmenes de datos con estructura flexible y escalabilidad."
+  },
+  {
+    "name": "MySQL",
+    "img": "/tech/mysql.svg",
+    "description": "Sistema de gestión de bases de datos relacional ampliamente utilizado para almacenar y consultar información de forma estructurada."
+  },
+  {
+    "name": "PHP",
+    "img": "/tech/php.svg",
+    "description": "Lenguaje de programación del lado del servidor utilizado para crear sitios web dinámicos e interactivos."
+  },
+  {
+    "name": "Tailwind",
+    "img": "/tech/tailwind.svg",
+    "description": "Framework CSS utilitario que permite construir interfaces personalizadas de forma rápida mediante clases predefinidas y composables."
+  },
+  {
+    "name": "Vue",
+    "img": "/tech/vue.svg",
+    "description": "Framework progresivo de JavaScript para construir interfaces de usuario reactivas y componentes reutilizables."
+  },
+  {
+    "name": "React",
+    "img": "/tech/react.svg",
+    "description": "Biblioteca de JavaScript desarrollada por Meta para crear interfaces de usuario interactivas mediante componentes declarativos."
+  },
+  {
+    "name": "TypeScript",
+    "img": "/tech/typescript.svg",
+    "description": "Superset de JavaScript que añade tipado estático, mejorando la escalabilidad, legibilidad y mantenimiento del código."
+  }
+]
