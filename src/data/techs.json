@@ -68,5 +68,10 @@
     "name": "TypeScript",
     "img": "/tech/typescript.svg",
     "description": "Superset de JavaScript que añade tipado estático, mejorando la escalabilidad, legibilidad y mantenimiento del código."
+  },
+  {
+    "name": "Vite",
+    "img": "/tech/vite.svg",
+    "description": "Herramienta de desarrollo que acelera la creación de aplicaciones web modernas, ofreciendo un entorno rápido y eficiente con soporte para módulos ES y Hot Module Replacement."
   }
 ]

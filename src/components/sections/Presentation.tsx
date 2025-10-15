@@ -6,7 +6,7 @@ import darkMail from "/icons/dark-mail.svg"
 
 export const Presentation = () => {
     return (
-        <section className=" min-h-screen
+        <section className="w-full max-w-9/10 min-h-screen
             flex flex-col items-center justify-center border-b border-teal-800/50 
             text-center text-stone-700
             dark:text-stone-200

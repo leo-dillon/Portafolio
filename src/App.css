@@ -5,7 +5,7 @@
 
 @keyframes name {
     0%{
-        left: 6px
+        left: 6px;
     }
     100%{
         top: 100%

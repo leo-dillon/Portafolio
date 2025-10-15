@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Weather Now",
+    "slug": "weather-now", 
+    "large_description": "🌤 WeatherNow es una aplicación del clima desarrollada con React, Vite, TypeScript y Tailwind CSS que consume la API de Open-Meteo. Muestra el estado climático actual según la ubicación del usuario, incluyendo temperatura, velocidad del viento y una representación visual basada en el código meteorológico (weathercode).",
+    "short_description": "Mostramos el estado del tiempo en tu ubicación o en cualquier lugar que desees consultar.",
+    "images": [
+      {
+        "name": "Página de inicio (modo oscuro)",
+        "img": "/projects/weatherNow/home.png"
+      },
+      {
+        "name": "Carga tipo skeleton (modo oscuro)",
+        "img": "/projects/weatherNow/SK.png"
+      },
+      {
+        "name": "Error en la búsqueda (modo oscuro)",
+        "img": "/projects/weatherNow/error.png"
+      },
+      {
+        "name": "Página de inicio (modo claro)",
+        "img": "/projects/weatherNow/home_light.png"
+      },
+      {
+        "name": "Carga tipo skeleton (modo claro)",
+        "img": "/projects/weatherNow/SK_light.png"
+      },
+      {
+        "name": "Error en la búsqueda (modo claro)",
+        "img": "/projects/weatherNow/error_light.png"
+      }
+    ],
+    "caracteristicas": [
+      "Consulta del clima de distintas ciudades del mundo.",
+      "Uso de las diversas herramientas que ofrece la API de Open-Meteo.",
+      "Posibilidad de cambiar las unidades de medida de todos los valores.",
+      "Diseño responsive para garantizar la accesibilidad en todos los dispositivos.",
+      "Implementación de modo claro y modo oscuro."
+    ],
+    "desafios": [
+      "Integración de TypeScript para tipar y manejar los datos obtenidos desde Open-Meteo.",
+      "Uso de distintos Hooks de React para la gestión del estado y efectos.",
+      "Implementación de geolocalización para detectar la ubicación del usuario y realizar búsquedas personalizadas."
+    ],
+    "tecnologias": [
+      "Vite",
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "TypeScript",
+      "JavaScript",
+      "React"
+    ],
+    "github": "https://github.com/leo-dillon/WeatherNow",
+    "live": "",
+    "date": "2025-10-10", 
+    "category": "Aplicación web", 
+    "tags": ["API", "Weather", "Frontend"], 
+    "status": "finished" 
+  }
+]

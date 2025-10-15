@@ -34,7 +34,7 @@ export const AboutMe = () => {
                 </div>
                 <div>
                     <Subtitle text="Mis Tecnologías / Herramientas"/>
-                    <ListTechnology />
+                    <ListTechnology technologies={null} />
                 </div>
             </div>
             

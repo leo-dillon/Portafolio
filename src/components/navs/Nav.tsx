@@ -22,8 +22,8 @@ export const Nav = ({fixed} : Props) => {
                  }
             `}
         >
-            <HeaderAnchor link="#aboutMe" text="Sobre Mí" fixed={fixed} img={fileInfo} darkImg={darkFileInfo} />
-            <HeaderAnchor link="#myProyects" text="Mis Proyectos" fixed={fixed} img={code} darkImg={darkCode} />
+            <HeaderAnchor link="/#aboutMe" text="Sobre Mí" fixed={fixed} img={fileInfo} darkImg={darkFileInfo} />
+            <HeaderAnchor link="/#myProyects" text="Mis Proyectos" fixed={fixed} img={code} darkImg={darkCode} />
             <HeaderAnchor link="https://mail.google.com/mail/?view=cm&fs=1&to=jeannotegui@gmail.com&su=Hola%20Leonardo!" text="Contactame" fixed={fixed} img={mail} darkImg={darkMail}  target={true} />
         </nav>
     )

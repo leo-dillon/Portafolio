@@ -6,7 +6,7 @@ export const Projects = () => {
     return ( 
         <section 
         id="myProyects"
-        className="w-full max-w-9/10 md:ml-auto min-h-screen pt-18
+        className="w-full max-w-9/10 md:ml-auto min-h-screen py-9
             flex flex-col gap-6
             text-stone-700 border-b border-teal-800/50 
             dark:text-stone-200
@@ -16,6 +16,11 @@ export const Projects = () => {
                 <H2 text="Proyectos Destacados" />
             </div>
             <div className="flex flex-row flex-wrap gap-6">
+                <Proyect/>
+                <Proyect/>
+                <Proyect/>
+                <Proyect/>
+                <Proyect/>
                 <Proyect/>
             </div>
         </section>
