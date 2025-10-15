@@ -1,8 +1,29 @@
-import { Proyect } from "../proyects/Proyect"
-import { H2 } from "../text/H2"
+import { Proyect }  from "../proyects/Proyect"
+import { H2 }       from "../text/H2"
 import { Subtitle } from "../text/Subtitle"
 
+import projects     from "../../data/projects.json"
+
+type projectImages = {
+    name: string,
+    img: string
+}
+type projectType = {
+    id: number,
+    name: string,
+    slug: string,
+    large_description: string,
+    short_description: string,
+    images: projectImages[],
+    caracteristicas: string[],
+    desafios: string[],
+    tecnologias: string[],
+    github: string,
+    live: string
+}
+
 export const Projects = () => { 
+    const myProyects: projectType[] = projects
     return ( 
         <section 
         id="myProyects"
@@ -16,12 +37,21 @@ export const Projects = () => {
                 <H2 text="Proyectos Destacados" />
             </div>
             <div className="flex flex-row flex-wrap gap-6">
-                <Proyect/>
-                <Proyect/>
-                <Proyect/>
-                <Proyect/>
-                <Proyect/>
-                <Proyect/>
+                {
+                    myProyects.map( (project, index) => {
+                        return (
+                            <Proyect 
+                                key={index}
+                                img={project.images[0]} 
+                                imgDark={project.images[3]} 
+                                name={project.name} 
+                                description={project.short_description} 
+                                techs={project.tecnologias} 
+                                slug={project.slug}
+                            />
+                        )
+                    } )
+                }
             </div>
         </section>
     )

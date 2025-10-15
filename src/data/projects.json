@@ -45,18 +45,12 @@
     ],
     "tecnologias": [
       "Vite",
-      "HTML",
-      "CSS",
       "Tailwind",
       "TypeScript",
       "JavaScript",
       "React"
     ],
     "github": "https://github.com/leo-dillon/WeatherNow",
-    "live": "",
-    "date": "2025-10-10", 
-    "category": "Aplicación web", 
-    "tags": ["API", "Weather", "Frontend"], 
-    "status": "finished" 
+    "live": ""
   }
 ]

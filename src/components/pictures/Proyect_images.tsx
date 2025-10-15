@@ -1,7 +1,15 @@
 import { useState } from "react"
 
-export const Proyect_images = () => {
-    const [ image, setImage ] = useState<string>("/proyects/weatherNow/home.png")
+type projectImages = {
+    name: string,
+    img: string
+}
+interface Props{
+    images: projectImages[] 
+}
+
+export const Proyect_images = ({ images }: Props) => {
+    const [ image, setImage ] = useState<string>( images[0].img )
     return (
         <div id="images" className="
             w-full max-w-9/10 mx-auto
@@ -20,60 +28,21 @@ export const Proyect_images = () => {
             <div id="short" className="w-full
                 flex flex-row justify-center flex-wrap items-center gap-1 sm:gap-4
             ">
-                <picture className="w-full max-w-[140px] sm:max-w-[160px] h-[120px] cursor-pointer duration-200
-                    flex justify-center items-center
-                    bg-stone-400 dark:bg-stone-800 rounded-xl
-                    hover:scale-90
-                "
-            onClick={() => setImage("/proyects/weatherNow/home.png")}
-                >
-                    <img src="/proyects/weatherNow/home.png" alt="Página incia" className="w-full max-w-9/10 sm:max-w-8/10 rounded-2xl border-1 border-stone-600" />
-                </picture>
-                <picture className="w-full max-w-[140px] sm:max-w-[160px] h-[120px] cursor-pointer duration-200
-                    flex justify-center items-center
-                    bg-stone-400 dark:bg-stone-800 rounded-xl
-                    hover:scale-90
-                "
-                onClick={() => setImage("/proyects/weatherNow/SK.png")}
-                >
-                    <img src="/proyects/weatherNow/SK.png" alt="Página incia" className="w-full max-w-9/10 sm:max-w-8/10 rounded-2xl border-1 border-stone-600" />
-                </picture>
-                <picture className="w-full max-w-[140px] sm:max-w-[160px] h-[120px] cursor-pointer duration-200
-                    flex justify-center items-center
-                    bg-stone-400 dark:bg-stone-800 rounded-xl
-                    hover:scale-90
-                "
-                onClick={() => setImage("/proyects/weatherNow/error.png")}
-                >
-                    <img src="/proyects/weatherNow/error.png" alt="Página incia" className="w-full max-w-9/10 sm:max-w-8/10 rounded-2xl border-1 border-stone-600" />
-                </picture>
-                <picture className="w-full max-w-[140px] sm:max-w-[160px] h-[120px] cursor-pointer duration-200
-                    flex justify-center items-center
-                    bg-stone-400 dark:bg-stone-800 rounded-xl
-                    hover:scale-90
-                "
-                onClick={() => setImage("/proyects/weatherNow/home_light.png")}
-                >
-                    <img src="/proyects/weatherNow/home_light.png" alt="Página incia" className="w-full max-w-9/10 sm:max-w-8/10 rounded-2xl border-1 border-stone-600" />
-                </picture>
-                <picture className="w-full max-w-[140px] sm:max-w-[160px] h-[120px] cursor-pointer duration-200
-                    flex justify-center items-center
-                    bg-stone-400 dark:bg-stone-800 rounded-xl
-                    hover:scale-90
-                "
-                onClick={() => setImage("/proyects/weatherNow/SK_light.png")}
-                >
-                    <img src="/proyects/weatherNow/SK_light.png" alt="Página incia" className="w-full max-w-9/10 sm:max-w-8/10 rounded-2xl border-1 border-stone-600" />
-                </picture>
-                <picture className="w-full max-w-[140px] sm:max-w-[160px] h-[120px] cursor-pointer duration-200
-                    flex justify-center items-center
-                    bg-stone-400 dark:bg-stone-800 rounded-xl
-                    hover:scale-90
-                "
-                onClick={() => setImage("/proyects/weatherNow/error_light.png")}
-                >
-                    <img src="/proyects/weatherNow/error_light.png" alt="Página incia" className="w-full max-w-9/10 sm:max-w-8/10 rounded-2xl border-1 border-stone-600" />
-                </picture>
+                {   images.map( (img, index) => {
+                    return (
+                        <picture className="w-full max-w-[140px] sm:max-w-[160px] h-[120px] cursor-pointer duration-200
+                            flex justify-center items-center
+                            bg-stone-400 dark:bg-stone-800 rounded-xl
+                            hover:scale-90
+                        "
+                        onClick={() => setImage(img.img)}
+                        key={index}
+                        >
+                            <img src={ img.img } alt={img.name} className="w-full max-w-9/10 sm:max-w-8/10 rounded-2xl border-1 border-stone-600" />
+                        </picture>
+                    )
+                })
+                }
             </div>
         </div>
     )
