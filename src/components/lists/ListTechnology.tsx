@@ -20,7 +20,7 @@ export const ListTechnology = ({ technologies }: Props ) => {
     useEffect( () => {
         let newArray
         if( technologies == null ){
-            newArray = arrayTechs    
+            newArray = techs    
         }else {
             newArray = techs.filter( tech => technologies.includes(tech.name) )
         }
