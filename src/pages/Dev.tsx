@@ -42,9 +42,7 @@ export const Dev = () => {
     const navigate = useNavigate()
     
     useEffect( () => {
-        console.log("Mi proyecto ")
         const myProject: projectType[] = projects.filter( proy => proy.slug == name )
-        console.log("Mi proyecto  ", myProject.length)
         if( myProject.length == 0    ){
             navigate("/error")
         }else{

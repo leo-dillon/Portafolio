@@ -26,7 +26,11 @@ export const ListTechnology = ({ technologies }: Props ) => {
         }
         setArrayTechs( newArray )
     },[])
-
+    const closeDescription = () => {
+        if (timeoutRef.current) {
+            setDescription(null)
+        }
+    }
     const openDescription = (tech: Tech) => {
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current)
@@ -64,10 +68,11 @@ export const ListTechnology = ({ technologies }: Props ) => {
                         bg-zinc-200 shadow-sm shadow-stone-800 border-1 rounded-xl 
                         text-stone-800  
                         dark:bg-zinc-900 dark:text-stone-200 dark:shadow-stone-500
-                        fixed bottom-18
+                        fixed bottom-18 z-100
                         sm:top-2 sm:left-2 sm:bottom-auto
                         ${description}
-                    `}>
+                    `}
+                    onClick={() => closeDescription()}>
                         <div className="w-full flex gap-5 border-b-1 border-b-teal-300 pr-6 pb-2 mb-2">
                             <img src={description.img} alt={`Imagen de ${description.name}`} className="w-6 drop-shadow-[0px_0px_0px_rgba(0,0,0,1)]" />
                             <h3 className="w-full text-center font-bold text-xl">{description.name}</h3>

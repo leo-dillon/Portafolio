@@ -9,7 +9,7 @@ interface Props {
 export const Logo = ({ fixed }: Props) => {
     const { isDark } = useDarkMode()
     return (
-        <div className='flex items-center gap-4'>
+        <a href="/" className='flex items-center gap-4'>
             <picture>
                 <img
                     src={(isDark) ? lightLogo : darkLogo}
@@ -23,6 +23,6 @@ export const Logo = ({ fixed }: Props) => {
                     `}
                 />
             </picture>
-        </div>
+        </a>
     )
 }

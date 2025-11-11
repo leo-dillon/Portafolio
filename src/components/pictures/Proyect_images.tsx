@@ -30,7 +30,7 @@ export const Proyect_images = ({ images }: Props) => {
             ">
                 {   images.map( (img, index) => {
                     return (
-                        <picture className="w-full max-w-[140px] sm:max-w-[160px] h-[120px] cursor-pointer duration-200
+                        <picture className="w-full max-w-[130px] sm:max-w-[160px] h-[120px] cursor-pointer duration-200
                             flex justify-center items-center
                             bg-stone-400 dark:bg-stone-800 rounded-xl
                             hover:scale-90

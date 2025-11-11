@@ -9,7 +9,7 @@ import { Dev } from './pages/Dev'
 function App() {
   const router = createBrowserRouter([
     { path:"/",             element: <Home />       },
-    { path:"/dev/:name",  element: <Dev />        },
+    { path:"/dev/:name",    element: <Dev />        },
     { path:"*",             element: <Error_404 />  }
   ])
   return (

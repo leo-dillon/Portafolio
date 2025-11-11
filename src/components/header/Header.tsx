@@ -10,21 +10,26 @@ import { BtnChangeColor } from "../buttons/BtnChangeColor"
 export const Header = () => {
     const [fixed, setFixed] = useState(true);
 
+    const handleScroll = () => {
+        const windowResize = window.innerWidth;
+        if( windowResize < 768 ) {
+            setFixed(false)
+            
+        } else {
+            if (window.scrollY > 100 && fixed) setFixed(false);
+            if (window.scrollY <= 100 && !fixed) setFixed(true);
+        }
+    };
+
     useEffect(() => {
-        const handleScroll = () => {
-            const windowResize = window.innerWidth;
-            if( windowResize < 768 ) {
-                setFixed(false)
-                
-            } else {
-                if (window.scrollY > 100 && fixed) setFixed(false);
-                if (window.scrollY <= 100 && !fixed) setFixed(true);
-            }
-        };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, [fixed]);
+
+    useEffect(() => {
+        handleScroll()
+    }, [])
 
     return (
         <header

@@ -6,8 +6,8 @@ import { DarkModeProvider } from './context/darkModeContext.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <DarkModeProvider>
-      <App />
-    </DarkModeProvider>
+      <DarkModeProvider>
+            <App />
+      </DarkModeProvider>
   </StrictMode>,
 )
