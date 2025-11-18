@@ -11,14 +11,13 @@ type images = {
 }
 interface Props {
     img: images,
-    imgDark: images,
     name: string,
     description: string,
     techs: string[],
     slug: string
 }
 
-export const Proyect = ({img, imgDark, name, description, techs, slug}: Props) => {
+export const Proyect = ({img, name, description, techs, slug}: Props) => {
     const { isDark } = useDarkMode()
 
     return(
@@ -26,30 +25,26 @@ export const Proyect = ({img, imgDark, name, description, techs, slug}: Props) =
         flex flex-col gap-3
         sm:max-w-[300px]
         bg-stone-100
-        dark:bg-stone-900
-        rounded-2xl shadow-md shadow-stone-900
-        dark:shadow-stone-600
-        hover:shadow-sm
+        dark:bg-black
+        rounded-3xl border-1 border-blue-900/70 dark:border-blue-100/30
+        hover:shadow-xl
         ">
-            <picture className="w-full pt-2
-                rounded-3xl
-                flex justify-center items-center
+            <picture className="w-full h-[190px] pt-2
+                rounded-3xl border-1 border-teal-600/10
+                flex justify-center items-center overflow-hidden duration-150
+                group-hover:scale-95
             ">
-                <img src={ isDark ? img.img : imgDark.img } alt={ isDark ? img.name : imgDark.name } 
-                    className="rounded-xl duration-150
-                        group-hover:scale-95
-                        shadow-md shadow-stone-900
-                        dark:shadow-stone-600
-                    "
+                <img src={ img.img } alt={ img.name } 
+                    className="w-full h-full object-cover "
                 />
             </picture>
             <div className="flex flex-col gap-3">
-                <h2 className="text-3xl text-center font-semibold text-teal-800
-                dark:text-teal-300
+                <h2 className="text-3xl text-center font-bold text-blue-900
+                dark:text-blue-100 border-b-1
                 ">
                     { name }
                 </h2>
-                <p className="w-full max-w-9/10 mx-auto text-pretty ">
+                <p className="w-full max-w-9/10 mx-auto text-pretty opacity-80 ">
                     { description }
                 </p>
             </div>

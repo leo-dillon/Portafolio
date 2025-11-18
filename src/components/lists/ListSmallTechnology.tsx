@@ -63,8 +63,8 @@ export const ListSmallTechnology = ({ technologies }: Props ) => {
                         bg-zinc-200 shadow-sm shadow-stone-800 border-1 rounded-xl 
                         text-stone-800  
                         dark:bg-zinc-900 dark:text-stone-200 dark:shadow-stone-500
-                        fixed bottom-18
-                        sm:top-2 sm:left-2 sm:bottom-auto
+                        fixed bottom-18 left-5
+                        sm:top-2 sm:left-2 sm:bottom-auto z-100
                         ${description}
                     `}>
                         <div className="w-full flex gap-5 border-b-1 border-b-teal-300 pr-6 pb-2 mb-2">

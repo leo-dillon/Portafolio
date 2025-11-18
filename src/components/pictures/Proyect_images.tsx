@@ -10,6 +10,12 @@ interface Props{
 
 export const Proyect_images = ({ images }: Props) => {
     const [ image, setImage ] = useState<string>( images[0].img )
+    
+    const changeImage = (img: string) => {
+        setImage(img)
+        
+    }
+
     return (
         <div id="images" className="
             w-full max-w-9/10 mx-auto
@@ -20,7 +26,7 @@ export const Proyect_images = ({ images }: Props) => {
             bg-stone-300 dark:bg-stone-900">
             <div id="large">
                 <picture className="flex items-center w-full max-w-[300px] min-h-[250px]
-                    md:max-w-[500px] md:min-h-[380px]
+                    md:max-w-[500px] md:min-h-[300px]
                 ">
                     <img src={image} alt="Página incia" className="w-full rounded-2xl border-1 border-stone-600" />
                 </picture>
@@ -35,7 +41,7 @@ export const Proyect_images = ({ images }: Props) => {
                             bg-stone-400 dark:bg-stone-800 rounded-xl
                             hover:scale-90
                         "
-                        onClick={() => setImage(img.img)}
+                        onClick={() => changeImage(img.img)}
                         key={index}
                         >
                             <img src={ img.img } alt={img.name} className="w-full max-w-9/10 sm:max-w-8/10 rounded-2xl border-1 border-stone-600" />

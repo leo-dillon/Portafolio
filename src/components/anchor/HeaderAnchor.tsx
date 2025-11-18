@@ -16,9 +16,8 @@ export const HeaderAnchor = ({ link, text, fixed, img, darkImg, target = false }
             href={ link }
             className={`
                 text-stone-800 font-semibold rounded-md duration-100 cursor-pointer group text-lg   
-                hover:bg-neutral-300
+                hover:underline hover:scale-105
                 dark:text-stone-100
-                dark:hover:bg-neutral-500
                 ${ ( fixed ) ? "p-3" : "p-2"}
             `}
             title={text}

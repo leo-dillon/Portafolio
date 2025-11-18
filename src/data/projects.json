@@ -52,5 +52,47 @@
     ],
     "github": "https://github.com/leo-dillon/WeatherNow",
     "live": ""
+  },
+  {
+    "id": 2,
+    "name": "Desafíos Técnicos",
+    "slug": "desafios-tecnicos", 
+    "large_description": "Como desarrollador me gusta realizar desafíos técnicos. Estos desafíos me permiten mejorar mis habilidades de lógica, pensamiento critico y creatividad. La mayoría de los desafíos que resuelvo provienen de la plataforma LeetCode, un sitio muy completo que reúne problemas de distintas temáticas y niveles de dificultad. También estoy realizando desafíos de otras páginas como por ejemplo AdventJS, Halloween.dev Cada desafío que completo lo documento dentro de este proyecto, organizándolo por nivel de dificultad (Fácil, Medio, o Difícil) y acompañándolo con un enlace directo al desafío en LeetCode. Mi objetivo con este repositorio es compartir mi forma de resolver los distintos desafíos y dejar registro de los avances que voy logrando.",
+    "short_description": "En está página voy a subir las resoluciones a los desafíos técnicos de diferentes plataformas.",
+    "images": [
+      {
+        "name": "Página de inicio",
+        "img": "/projects/desafios/home.png"
+      },
+      {
+        "name": "Lista de desafíos resuletos",
+        "img": "/projects/desafios/listaDesafios.png"
+      },
+      {
+        "name": "Este es un ejemplo de un desafío resuelto",
+        "img": "/projects/desafios/desafioresuelto.png"
+      }
+    ],
+    "caracteristicas": [
+      "Resolución de ejerciciós lógicos dentro de JavaScript",
+      "Utilización de Vue.js para mantener la web liviana",
+      "Dentro de los ejercición podrás contar con una explicación de la resoluciones aplicadas",
+      "( Proximamente ) Implementación de test para los desafíos correspondientes",
+      "Páginas donde resuelvo desafíos ( LeetCode - AdventJs ) ",
+      "Como los desafíos no son de mi autoria no levantare un servidor para dicha página"
+    ],
+    "desafios": [
+      "Estudio continuo en las mejores practicas para resolver los problemas de la mejor manera",
+      "Estudio continuo sobre los diferentes tipos de paradigmas de la programación",
+      "Manejo de me gran cantidad de datos de forma eficiente para mantener la página andando sin cortes"
+    ],
+    "tecnologias": [
+      "Vite",
+      "Tailwind",
+      "JavaScript",
+      "Vue"
+    ],
+    "github": "https://github.com/leo-dillon/Desafios",
+    "live": ""
   }
 ]

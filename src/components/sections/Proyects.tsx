@@ -43,7 +43,6 @@ export const Projects = () => {
                             <Proyect 
                                 key={index}
                                 img={project.images[0]} 
-                                imgDark={project.images[3]} 
                                 name={project.name} 
                                 description={project.short_description} 
                                 techs={project.tecnologias} 

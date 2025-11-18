@@ -14,11 +14,7 @@ export const BtnChangeColor = () => {
         <button
                 onClick={changeColors}
                 id="theme"
-                className="
-                    p-2 rounded-md duration-100 cursor-pointer group
-                    hover:bg-neutral-300
-                    dark:hover:bg-neutral-500
-                    "
+                className="p-2 rounded-md duration-100 cursor-pointer group"
             >
                 <picture >
                     <img className='w-6 group-hover:scale-110 duration-200' src={(isDark) ? Sun : Moon} alt="Icono Tema Oscuro" title="Cambiar tema actual" />

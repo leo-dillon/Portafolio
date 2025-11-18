@@ -6,19 +6,21 @@ import darkMail from "/icons/dark-mail.svg"
 
 export const Presentation = () => {
     return (
-        <section className="w-full max-w-9/10 min-h-screen
-            flex flex-col items-center justify-center border-b border-teal-800/50 
+        <section className="relative w-full max-w-9/10 min-h-150 sm:min-h-screen pb-24 sm:pb-0
+            flex flex-col items-center gap-2 justify-center border-b border-teal-800/50 
             text-center text-stone-700
             dark:text-stone-200
         ">
-            <h1 className="text-5xl md:text-6xl lg:text-9xl font-bold py-5 animate-pulse delay-300
-                via-stone-950 bg-clip-text text-transparent bg-gradient-to-br
-                dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-br
-                dark:from-primary-950 dark:via-white dark:to-primary-950
+            <h1 className="
+            w-full md:maw-w-9/10
+            text-5xl text-wrap font-bold px-8 py-5 text-blue-950 dark:text-gray-100 sm:mb-12
+            sm:rounded-full
+            md:text-8xl 
+            lg:text-9xl 
             ">
-                Leonardo Dillon <br /> Jeannoteguy
+                Leonardo <span className=" text-4xl md:text-5xl opacity-30 ">Nahuel</span> <span className=" text-4xl md:text-5xl opacity-30">Jeannoteguy</span>  Dillon 
             </h1>
-            <p className="mt-12 text-2xl md:text-4xl text-teal-800 font-bold
+            <p className="sm:mt-12 text-2xl md:text-4xl text-blue-950/70 font-bold
                 dark:text-teal-300
             ">
                 Programador Full-Stack
@@ -28,8 +30,8 @@ export const Presentation = () => {
                 Desarrollador de aplicaciones accesibles, atractivas y modernas
             </p>
             <div 
-            className="mt-8 p-4 py-2 flex flex-row gap-4 bg-stone-200 shadow-sm shadow-stone-800
-                dark:bg-stone-800 dark:shadow-stone-500
+            className="absolute bottom-12 p-4 py-2 flex flex-row gap-4 bg-stone-200 shadow-sm shadow-blue-800
+                dark:bg-stone-950 dark:shadow-blue-500
                 rounded-full
             ">
                 <HeaderAnchor link="https://mail.google.com/mail/?view=cm&fs=1&to=jeannotegui@gmail.com&su=Hola%20Leonardo!" text="Gmail" fixed={false} img={mail} darkImg={darkMail} target={true} />

@@ -74,7 +74,11 @@ export const Dev = () => {
                     </h2>
                     <Proyect_images images={proy.images} />
                     <div className="w-full flex justify-start items-center gap-12 opacity-80">
-                        { ( proy.github != '' ) ? <HeaderAnchor link={proy.github} text="Ir al proyecto en github" fixed={true} img={github} darkImg={darkGithub} target={true} /> : "" }
+                        { ( proy.github != '' ) 
+                            ? <div className="border-b-1 sm:border-b-0">
+                                <HeaderAnchor link={proy.github} text="Ir al proyecto en Github" fixed={true} img={github} darkImg={darkGithub} target={true} /> 
+                            </div>
+                            : "" }
                         { ( proy.live != '') ? <HeaderAnchor link={proy.live} text="Ver Online" fixed={true} img={code} darkImg={darkCode} target={true} /> : ''}
                     </div>
                     <div className="w-full mt-12
@@ -104,7 +108,7 @@ export const Dev = () => {
                                     <img src={ isDark ? code : darkCode } alt="icono de descripción" />
                                     <h3 className="text-xl text-teal-800 dark:text-teal-200 font-semibold"> Tecnologías </h3>
                                 </div>
-                                <ListTechnology technologies={["Vite", "HTML", "CSS", "Tailwind", "TypeScript", "JavaScript", "React" ]} />
+                                <ListTechnology technologies={proy.tecnologias} />
                             </div>
                         </div>
                     </div>
