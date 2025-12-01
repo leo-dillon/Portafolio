@@ -50,6 +50,10 @@ export const Dev = () => {
         }
     }, [navigate, name] )
 
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+
     return(
         <section className={`w-full min-h-screen mt-12 sm:mt-24 
             flex flex-col justify-center items-center gap-6 
