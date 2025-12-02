@@ -7,8 +7,10 @@ import { useLocation } from "react-router-dom"
 export const Home = () => {
     const { hash } = useLocation()
     useEffect( () => {
-        const element = document.querySelector(hash)
-        element?.scrollIntoView({ behavior: "smooth" })
+        if(hash.length > 2){
+            const element = document.querySelector(hash)
+            element?.scrollIntoView({ behavior: "smooth" })
+        }
     }, [hash]) 
     return (
         <>
