@@ -7,10 +7,11 @@ export const Description = () =>{
             <span className="text-teal-800 dark:text-teal-300 font-semibold"> M</span>i nombre es <span className="text-teal-800 dark:text-teal-300 font-semibold"> Leonardo Dillon</span> y nací en Buenos Aires,
             <span className="text-teal-800 dark:text-teal-300 font-semibold"> Argentina</span>.
             Comencé mis estudios en el año 2022, especializándome en programación web
-            en <a className="text-teal-800 dark:text-teal-300 font-semibold underline" href="https://www.digitalhouse.com/ar" title="Ir a digitalhouse.com.ar">Digital House</a>, donde me gradué como <span className="text-teal-800 dark:text-teal-300 font-semibold"> desarrollador Front-End </span> 
+            en <a className="text-teal-800 dark:text-teal-300 font-semibold underline" href="https://www.digitalhouse.com/ar" target="_blanck" title="Ir a digitalhouse.com.ar">Digital House</a>, donde me gradué como <span className="text-teal-800 dark:text-teal-300 font-semibold"> desarrollador Front-End </span> 
             ese mismo año. Continué aprendiendo de manera autodidacta hasta que, en
             agosto de 2023, comencé la carrera de 
-            <span className="text-teal-800 dark:text-teal-300 font-semibold"> Diseño y Desarrollo Web</span> en el <a className="text-teal-800 dark:text-teal-300 font-semibold underline" href="https://davinci.edu.ar/carreras/desarrollo-web-y-mobile" title="Ir a davinci.edu.ar">Instituto Da Vinci</a>, donde sigo en la actualidad.
+            <span className="text-teal-800 dark:text-teal-300 font-semibold"> Diseño y Desarrollo Web</span> en el <a className="text-teal-800 dark:text-teal-300 font-semibold underline" href="https://davinci.edu.ar/carreras/desarrollo-web-y-mobile" title="Ir a davinci.edu.ar" target="_blanck">Instituto Da Vinci</a>. <br />
+            A finales del 2025 aprobé las últimas materias y en la actualidad me encuentro desarrollado el proyecto final, con el cual me recibiría como <span className="text-teal-800 dark:text-teal-300 font-semibold"> Técnico Superior en Diseño y Programación Web </span>
         </div>
     )
 }

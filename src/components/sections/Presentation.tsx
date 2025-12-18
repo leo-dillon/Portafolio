@@ -1,8 +1,11 @@
 import { HeaderAnchor } from "../anchor/HeaderAnchor"
 import githubLight from "/redS/brand-github.svg"
 import githubDark from "/redS/brand-dark-github.svg"
+import download from "/icons/donwload.svg"
+import downloadDark from "/icons/dark-donwload.svg"
 import mail from "/icons/mail.svg"
 import darkMail from "/icons/dark-mail.svg"
+import { DownlLoadAnchor } from "../anchor/DownLoadAnchord"
 
 export const Presentation = () => {
     return (
@@ -37,6 +40,7 @@ export const Presentation = () => {
                 <HeaderAnchor link="https://mail.google.com/mail/?view=cm&fs=1&to=jeannotegui@gmail.com&su=Hola%20Leonardo!" text="Gmail" fixed={false} img={mail} darkImg={darkMail} target={true} />
                 <HeaderAnchor link="https://github.com/leo-dillon" text="GitHub" fixed={false} img={githubLight} darkImg={githubDark} target={true} />
                 <HeaderAnchor link="https://www.linkedin.com/in/leonardo-dillon-jeannoteguy-1878b515a/" text="LinkedIn" fixed={false} img="/redS/brand-linkedin.svg" darkImg="/redS/brand-dark-linkedin.svg" target={true} />
+                <DownlLoadAnchor img={download} darkImg={downloadDark} />
             </div>
         </section>
     )
