@@ -86,13 +86,22 @@ export const Dev = () => {
                         { ( proy.live != '') ? <HeaderAnchor link={proy.live} text="Ver Online" fixed={true} img={code} darkImg={darkCode} target={true} /> : ''}
                     </div>
                     <div className="w-full mt-12
-                        flex flex-col items-center justify-center gap-12
-                    ">
+                        flex flex-col items-center justify-center gap-12 md:gap-18
+                    ">  
+                        <div className="w-full flex flex-col items-center gap-4">
+                            <div className="w-full max-w-9/10 text-lg text-stone-800
+                                md:ml-12
+                                dark:text-stone-200
+                                ">
+                                <h3 className="text-xl text-teal-800 dark:text-teal-200 font-semibold mb-2">Descripción: </h3>
+                                <p className="opacity-80">{proy.large_description}</p>
+                            </div>
+                        </div>
                         <div className="w-full max-w-9/10 mx-auto flex flex-col md:flex-row gap-8">
                             <div className="w-full flex flex-col gap-4">
                                 <div className="flex gap-2 items-center">
                                     <img src={isDark ? fileInfo : darkFileInfo} alt="icono de descripción" />
-                                    <h3 className="text-xl text-teal-800 dark:text-teal-200 font-semibold">Descripción</h3>
+                                    <h3 className="text-xl text-teal-800 dark:text-teal-200 font-semibold">Caracteristicas</h3>
                                 </div>
                                 <ListTexts texts={proy.caracteristicas} />
                             </div>

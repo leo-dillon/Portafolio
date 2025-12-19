@@ -62,15 +62,15 @@
     "images": [
       {
         "name": "Página de inicio",
-        "img": "/projects/desafios/home.png"
+        "img": "/projects/desafios/home.webp"
       },
       {
         "name": "Lista de desafíos resuletos",
-        "img": "/projects/desafios/listaDesafios.png"
+        "img": "/projects/desafios/listaDesafios.webp"
       },
       {
         "name": "Este es un ejemplo de un desafío resuelto",
-        "img": "/projects/desafios/desafioresuelto.png"
+        "img": "/projects/desafios/desafioresuelto.webp"
       }
     ],
     "caracteristicas": [
@@ -86,13 +86,76 @@
       "Estudio continuo sobre los diferentes tipos de paradigmas de la programación",
       "Manejo de me gran cantidad de datos de forma eficiente para mantener la página andando sin cortes"
     ],
-    "tecnologias": [
+    "tecnologias":  [
       "Vite",
       "Tailwind",
       "JavaScript",
       "Vue"
     ],
     "github": "https://github.com/leo-dillon/Desafios",
+    "live": ""
+  },
+  {
+    "id": 3,
+    "name": "Tienda de Perfumes",
+    "slug": "tienda-perfumes", 
+    "large_description": "Durante mi formación en la Escuela Da Vinci desarrollé diversos proyectos. Uno de ellos fue una aplicación web para una tienda de perfumería online. La plataforma cuenta con tres tipos de usuarios: visitantes no registrados, usuarios registrados y administradores. Los visitantes pueden recorrer y explorar el catálogo completo de productos, mientras que los usuarios registrados tienen la posibilidad de agregar productos a su carrito de compras y gestionar su selección. Por su parte, los usuarios administradores disponen de un panel de gestión que les permite crear, editar y eliminar las distintas categorías de la tienda, así como administrar la información general del sistema.",
+    "short_description": "E-commerce de perfumería, con distintos roles como: anonimos, users y admins.",
+    "images": [
+      {
+        "name": "Página de inicio",
+        "img": "/projects/tiendaPHP/home.webp"
+      },
+      {
+        "name": "tienda",
+        "img": "/projects/tiendaPHP/tienda.webp"
+      },
+      {
+        "name": "contacto",
+        "img": "/projects/tiendaPHP/contacto.webp"
+      },
+      {
+        "name": "sobreNosotros",
+        "img": "/projects/tiendaPHP/sobreNosotros.webp"
+      },
+      {
+        "name": "producto",
+        "img": "/projects/tiendaPHP/producto.webp"
+      },
+      {
+        "name": "user",
+        "img": "/projects/tiendaPHP/user.webp"
+      },
+      {
+        "name": "admin",
+        "img": "/projects/tiendaPHP/admin.webp"
+      },
+      {
+        "name": "stock",
+        "img": "/projects/tiendaPHP/stock.webp"
+      }
+    ],
+    "caracteristicas": [
+      "Sistema de roles y permisos",
+      "Gestión de usuarios  ",
+      "Carrito de compras",
+      "Panel de administración (CRUD)",
+      "Arquitectura del proyecto en PHP"
+    ],
+    "desafios": [
+      "Manejo de sesiones y autenticación",
+      "Control de permisos según rol",
+      "Lógica del carrito",
+      "Integración con la base de datos",
+      "Organización y escalabilidad"
+    ],
+    "tecnologias":[
+      "PHP",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/leo-dillon/PII-DILLON-FINAL",
     "live": ""
   }
 ]
