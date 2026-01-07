@@ -77,7 +77,7 @@ export const Dev = () => {
                         { proy.short_description } 
                     </h2>
                     <Proyect_images images={proy.images} />
-                    <div className="w-full flex justify-start items-center gap-12 opacity-80">
+                    <div className="w-full flex justify-center sm:justify-start items-center gap-12 opacity-80">
                         { ( proy.github != '' ) 
                             ? <div className="border-b-1 sm:border-b-0">
                                 <HeaderAnchor link={proy.github} text="Ir al proyecto en Github" fixed={true} img={github} darkImg={darkGithub} target={true} /> 

@@ -11,7 +11,7 @@ export const AboutMe = () => {
     return (
         <section 
         id="aboutMe"
-        className="w-full max-w-9/10 md:ml-auto min-h-screen pt-18
+        className="h w-full max-w-9/10 md:ml-auto min-h-screen pt-18
             flex flex-col gap-6
             text-stone-700 border-b border-teal-800/50 
             dark:text-stone-200

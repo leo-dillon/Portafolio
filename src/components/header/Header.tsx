@@ -36,22 +36,21 @@ export const Header = () => {
             role="banner" aria-label="Main navigation"
             className={`
                 fixed flex overflow-hidden w-full z-50 backdrop-blur-sm
-                bottom-0 left-0 shadow-sm
+                bottom-0 left-0 shadow-sm aparecer-T 
                 md:rounded-xl
                 transition-[top,left,bottom,transform,scale] duration-200 ease-in-out
                 hover:scale-101
                 ${fixed
                 ? `
                     min-w-[600px] max-w-max h-[66px] px-6 py-3 
-                    dark:bg-zinc-950 border border-gray-400
+                    dark:bg-zinc-950 border border-teal-400
                     flex-row justify-between items-center gap-6
-                    sm:top-4 sm:left-1/2 sm:-translate-x-1/2 dark:border-0 shadow-blue-900 dark:shadow-blue-500
+                    sm:top-4 sm:left-1/2 sm:-translate-x-1/2 dark:border-0 shadow-teal-900 dark:shadow-teal-500
                 `
                 : `
                     w-full p-2
                     md:w-14 dark:bg-zinc-950
-                    shadow-blue-900 dark:shadow-blue-500
-                    border border-transparent
+                    shadow-teal-900 dark:shadow-teal-500
                     flex-row justify-center items-center gap-4 
                     md:flex-col
                     md:left-2 md:bottom-4

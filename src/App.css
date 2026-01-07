@@ -11,6 +11,71 @@
     }
 }
 
+.aparecer-T{
+    animation: aparecer-T .3s ease-out;
+}
+
+@keyframes aparecer-T {
+    0% {
+        transform: translateY(-100px);
+        opacity: 40%
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+.aparecer-L{
+    animation: aparecer-L .5s ease-out;
+}
+.aparecer-L2{
+    animation: aparecer-L 1s ease-out;
+}
+.aparecer-L3{
+    animation: aparecer-L .2s ease-out;
+}
+
+@keyframes aparecer-L {
+    0% {
+        transform: translateX(-100px);
+        opacity: 40%
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+.headerAnimate{
+    animation: header .3s ease-out forwards;
+}
+@keyframes header {
+    0% {
+        left: 0px
+    }
+    100% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+section.h {
+    scroll-margin-top: 100px;
+  animation: fade-in .4s linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 *{
     scroll-behavior: smooth;
 }       

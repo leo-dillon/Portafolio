@@ -26,11 +26,13 @@ export const ListTechnology = ({ technologies }: Props ) => {
         }
         setArrayTechs( newArray )
     },[])
+
     const closeDescription = () => {
         if (timeoutRef.current) {
             setDescription(null)
         }
     }
+
     const openDescription = (tech: Tech) => {
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current)
@@ -42,6 +44,7 @@ export const ListTechnology = ({ technologies }: Props ) => {
             setDescription(null)
         }, 7000)
     }
+
     return (
         <ul className="relative flex flex-row flex-wrap justify-center sm:justify-start gap-8 mt-4 pb-6 mb-18">
             {
@@ -68,7 +71,7 @@ export const ListTechnology = ({ technologies }: Props ) => {
                         bg-zinc-200 shadow-sm shadow-stone-800 border-1 rounded-xl 
                         text-stone-800  
                         dark:bg-zinc-900 dark:text-stone-200 dark:shadow-stone-500
-                        fixed bottom-18 z-100
+                        fixed bottom-18 z-100 aparecer-T
                         sm:top-2 sm:left-2 sm:bottom-auto
                         ${description}
                     `}
